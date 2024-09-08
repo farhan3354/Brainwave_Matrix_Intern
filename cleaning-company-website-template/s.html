@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        /* Form container */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Input fields */
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        /* Submit button */
+        .form-submit {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Additional styling for specific input types */
+        input[type="date"] {
+            /* Customize date input appearance if needed */
+        }
+
+        input[type="radio"] {
+            /* Customize radio button appearance if needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Registration Form</h2>
+        <form action="submit.php" method="post">
+            <input class="form-input" type="text" name="name" placeholder="Name" required>
+            <input class="form-input" type="email" name="email" placeholder="Email" required>
+            <input class="form-input" type="tel" name="mobile" placeholder="Mobile Number" required>
+            <input class="form-input" type="date" name="dob" placeholder="Date of Birth" required>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <button class="form-submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
